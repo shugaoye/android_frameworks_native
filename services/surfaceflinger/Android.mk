@@ -37,7 +37,7 @@ LOCAL_SRC_FILES:= \
     RenderEngine/GLES11RenderEngine.cpp \
     RenderEngine/GLES20RenderEngine.cpp
 
-LOCAL_CFLAGS:= -DLOG_TAG=\"SurfaceFlinger\"
+LOCAL_CFLAGS:= -DLOG_TAG=\"SurfaceFlinger\" -DUSE_ION
 LOCAL_CFLAGS += -DGL_GLEXT_PROTOTYPES -DEGL_EGLEXT_PROTOTYPES
 
 ifeq ($(TARGET_BOARD_PLATFORM),omap4)
